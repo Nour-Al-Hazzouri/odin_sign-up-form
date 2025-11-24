@@ -1,6 +1,7 @@
 /*
 General styling to affect all the elements
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 html, body {
     padding: 0;
     margin: 0;
@@ -29,7 +30,7 @@ header {
     background-size: cover;
 }
 header > section {
-    margin-top: 20%;
+    margin-top: 30%;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 18%;
@@ -63,15 +64,53 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
+    background-color: #F5F5F5;
 }
 main > div {
-    height: 90%;
-    border: 1px red solid;
+    height: 80%;
 }
 main > div > section {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 60%;
     padding: 40px;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: 'roboto';
+}
+main > div > section:nth-child(2) {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #FFFFFF;
+}
+main > div > section > h1 {
+    font-size: 1.2rem;
+}
+form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    text-wrap: nowrap;
+}
+.formItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: .7rem;
+    width: 50%;
+    font-weight: 400;
+}
+button {
+    background-color: #596D48;
+    color: #FFF;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+}
+div > section > p:last-child {
+    font-size: .8rem;
+    margin-top: 30px;
 }

@@ -18,8 +18,41 @@
             <section>
                 <p>This is not a real online service! 
                     You know you need something like this in your life to help you realize your deepest dreams. 
-                    Sign up now to get started.</p>
+                    Sign up <i>now</i> to get started.</p>
                 <p>You <i>know</i> you want to</p>
+            </section>
+            <section>
+                <h1>Let's do this!</h1>
+                <form action="https://httpbin.org/post" method="post">
+                    <div class="formItem">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" required minlength="2">
+                    </div>
+                    <div class="formItem">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" required minlength="2">
+                    </div>
+                    <div class="formItem">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="formItem">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" required >
+                    </div>
+                    <div class="formItem">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required >
+                    </div>
+                    <div class="formItem">
+                        <label for="confirmPassword"> CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required >
+                    </div>
+                </form>
+            </section>
+            <section>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
             </section>
         </div>
     </main>
