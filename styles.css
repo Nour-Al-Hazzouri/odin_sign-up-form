@@ -29,7 +29,7 @@ header {
     background-image: url("./assets/halie-west-main-back-image.jpg");
     background-size: cover;
 }
-header > section {
+header > div {
     margin-top: 30%;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -40,16 +40,16 @@ header > section {
     color: #FFFFFF;
     gap: 10px;
 }
-header > section > img {
+header > div > img {
     width: auto;
     height: 100px;
 } 
 
-header > section > p {
+header > div > p {
     font-family: 'Norse-Bold', 'Times New Roman', Times, serif;
     font-size: 5rem;
 }
-header > section + p {
+header > div + p {
     position: absolute;
     bottom: 0;
     left: 13%;
@@ -70,7 +70,7 @@ main {
 main > div {
     height: 80%;
 }
-main > div > section {
+main > div > section, main > div > div {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 60%;
     padding: 40px;
@@ -85,6 +85,7 @@ main > div > section:nth-child(2) {
     flex-direction: column;
     justify-content: flex-end;
     background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 main > div > section > h1 {
     font-size: 1.2rem;
@@ -104,13 +105,34 @@ form {
     width: 50%;
     font-weight: 400;
 }
+input {
+    border: rgba(0, 0, 0, 0.3) .5px solid;
+    color: black;
+    opacity: 1;
+    padding: 5px;
+    border-radius: 5px;
+}
 button {
     background-color: #596D48;
     color: #FFF;
     padding: 10px 40px 10px 40px;
     border-radius: 5px;
 }
-div > section > p:last-child {
+div > div > p:last-child {
     font-size: .8rem;
     margin-top: 30px;
+}
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+#password:invalid, #confirmPassword:invalid {
+    border: 2px red solid;
+}
+#password:valid, #confirmPassword:valid {
+    border: 2px green solid;
+}
+input:focus {
+    border: 2px purple solid;
+    outline: none;
 }
