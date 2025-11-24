@@ -1,3 +1,6 @@
+/*
+General styling to affect all the elements
+*/
 html, body {
     padding: 0;
     margin: 0;
@@ -16,6 +19,10 @@ body {
     display: flex;
     flex-direction: row;
 }
+/*
+Start with specific styling
+Left side
+*/
 header {
     width: 40%;
     background-image: url("./assets/halie-west-main-back-image.jpg");
@@ -47,4 +54,24 @@ header > section + p {
     left: 13%;
     font-size: .8rem;
     color: #FFFFFF;
+}
+/*
+Start with right side
+*/
+main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main > div {
+    height: 90%;
+    border: 1px red solid;
+}
+main > div > section {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 60%;
+    padding: 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
